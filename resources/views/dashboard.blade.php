@@ -30,13 +30,13 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
-              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
+              <span class="img-responsive"><i class="fas fa-cog fa-spin"></i></span>
+      
               <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
+                <span class="info-box-text">Total Employees</span>
                 <span class="info-box-number">
-                  10
-                  <small>%</small>
+                  368
+                  <!-- <small>%</small> -->
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -49,8 +49,8 @@
               <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">Present Employees</span>
+                <span class="info-box-number">220,368</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -66,8 +66,8 @@
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">Absent Employees</span>
+                <span class="info-box-number">148</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -79,8 +79,8 @@
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-text">On Leaves</span>
+                <span class="info-box-number">45</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -122,7 +122,7 @@
                 <div class="row">
                   <div class="col-md-8">
                     <p class="text-center">
-                      <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                      <strong>Sales: 1 September, 2023 - 1 September, 2033</strong>
                     </p>
 
                     <div class="chart">
@@ -138,8 +138,8 @@
                     </p>
 
                     <div class="progress-group">
-                      Add Products to Cart
-                      <span class="float-right"><b>160</b>/200</span>
+                      Total Employees in TDAP HeadQuarter (Karachi)
+                      <span class="float-right"><b>368</b>/368</span>
                       <div class="progress progress-sm">
                         <div class="progress-bar bg-primary" style="width: 80%"></div>
                       </div>
@@ -147,8 +147,8 @@
                     <!-- /.progress-group -->
 
                     <div class="progress-group">
-                      Complete Purchase
-                      <span class="float-right"><b>310</b>/400</span>
+                      Absent Employees in TDAP(HQ)
+                      <span class="float-right"><b>368</b>/94</span>
                       <div class="progress progress-sm">
                         <div class="progress-bar bg-danger" style="width: 75%"></div>
                       </div>
@@ -156,8 +156,8 @@
 
                     <!-- /.progress-group -->
                     <div class="progress-group">
-                      <span class="progress-text">Visit Premium Page</span>
-                      <span class="float-right"><b>480</b>/800</span>
+                      <span class="progress-text">Present Employees in TDAP(HQ)</span>
+                      <span class="float-right"><b>368</b>/274</span>
                       <div class="progress progress-sm">
                         <div class="progress-bar bg-success" style="width: 60%"></div>
                       </div>
@@ -165,8 +165,8 @@
 
                     <!-- /.progress-group -->
                     <div class="progress-group">
-                      Send Inquiries
-                      <span class="float-right"><b>250</b>/500</span>
+                      Leave Employees in TDAP(HQ)
+                      <span class="float-right"><b>368</b>/48</span>
                       <div class="progress progress-sm">
                         <div class="progress-bar bg-warning" style="width: 50%"></div>
                       </div>

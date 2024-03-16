@@ -64,6 +64,12 @@
                     <!-- <button class="btn btn-warning btn-sm"> -->
                       <a target="_blank" class="btn btn-warning btn-sm" href="{{route('machine.extractAttendance',['machine_id'=>$mach->id])}}">Extract Attendance</a>
                     <!-- </button> -->
+
+                    <!-- <button class="btn btn-warning btn-sm"> -->
+                    <a target="_blank" class="btn btn-danger btn-sm" href="{{route('machine.clearData',['machine_id'=>$mach->id])}}">Clear Machine Attendance</a>
+                    <!-- </button> -->
+        
+        
                 </td>
               </tr>
               @endforeach

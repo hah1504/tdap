@@ -49,7 +49,7 @@
                 <tr>
                     <td>{{ $emp->attendance_machine_id }}</td>
                     <td>{{ $emp->full_name }}</td>
-                    <td>{{ $emp->empDesignation->name }}</td>
+                    <td>{{ $emp->empDesignation }}</td>
                     <td>{{ $emp_status[$emp->status] }}</td>
                     <td>
                         <button  wire:click="edit({{ $emp->id }})"  class="btn btn-primary btn-sm">Edit</button>

@@ -24,7 +24,18 @@ const submit = () => {
         ...data,
         remember: form.remember ? 'on' : '',
     })).post(route('login'), {
-        onFinish: () => form.reset('password'),
+        onBefore: () =>{
+            form.clearErrors();
+        },
+        onFinish: () => {
+            console.log(form.errors.email);
+            if(typeof form.errors.email === 'undefined'){
+                //no error found means login successfuly
+                window.location.reload()
+            }else{
+                form.reset('password');
+            }
+        },
     });
 };
 </script>

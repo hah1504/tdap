@@ -92,6 +92,8 @@ class AttMachineController extends Controller
 
     public function extractAtendance(){
 
+        ini_set('max_execution_time',-1);
+        
         $machine_id = $_GET['machine_id'];
         $machine = att_machine::findOrFail($machine_id);
         try{
@@ -103,7 +105,7 @@ class AttMachineController extends Controller
             $data = [];
             $count = 0;
             foreach ($atts as $key => $value) {
-                $attRecord = Attendance::find()->where(['uid'=>$value['uid']])->first();        
+                $attRecord = Attendance::where(['uid'=>$value['uid'],'machine_id'=>$machine_id])->first();        
                 if(!empty($attRecord)){
                     continue;
                 }
@@ -112,6 +114,7 @@ class AttMachineController extends Controller
                 $data[$count]['punch'] = $value['timestamp'];
                 $data[$count]['punch_type'] = $value['type'];
                 $data[$count]['punch_state'] = $value['state'];
+                $data[$count]['machine_id'] = $machine_id;
 
                 $count = $count + 1;
 
@@ -125,6 +128,27 @@ class AttMachineController extends Controller
         }
         
         
+        return view('machine.extractAttendance',compact('atts'));
+        
+    }
+
+    public function clearData(){
+
+        $machine_id = $_GET['machine_id'];
+        $machine = att_machine::findOrFail($machine_id);
+        try{
+
+            $zk = new ZKTeco($machine->ip, $machine->port);
+            $zk->connect();
+            $zk->clearAttendance(); 
+            session()->flash('message', 'Attendance Machine Log Deleted Successfully.');
+           $this->index();
+
+           
+        }catch(\Exception $e){
+           
+            dd($e);
+        }
         return view('machine.extractAttendance',compact('atts'));
         
     }
